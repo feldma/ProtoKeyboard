@@ -81,6 +81,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Key.cpp" />
+    <ClCompile Include="src\Keyboard.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ProtoKeyboard.cpp" />
   </ItemGroup>
@@ -92,6 +94,10 @@
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Form\ProtoKeyboard.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="include\Key.h" />
+    <ClInclude Include="include\Keyboard.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
